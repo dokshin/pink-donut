@@ -45,17 +45,17 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Configs
 ------------------------------------------------*/
-.header-navbar, .header-button-box {
+.what-scroll, .what-title-box, .what-item, .what-text, .header-navbar, .header-button-box {
   margin-right: 0.52083%;
   margin-left: 0.52083%; }
 
-.header-navbar, .header-button-box {
+.what-scroll, .what-title-box, .what-item, .what-text, .header-navbar, .header-button-box {
   padding-right: 0;
   padding-left: 0; }
 
 /* Row
 ------------------------------------------------*/
-.wrapper-site-header, .wrapper-footer {
+.wrapper-site-header, .wrapper-what, .wrapper-footer, .what-header {
   margin-left: 0;
   margin-right: 0;
   max-width: 1200px;
@@ -70,6 +70,22 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Columns
 ------------------------------------------------*/
+.what-scroll {
+  width: 15.62501%;
+  box-sizing: border-box; }
+
+.what-title-box {
+  width: 23.95834%;
+  box-sizing: border-box; }
+
+.what-item {
+  width: 32.29167%;
+  box-sizing: border-box; }
+
+.what-text {
+  width: 40.62501%;
+  box-sizing: border-box; }
+
 .header-navbar {
   width: 65.62501%;
   box-sizing: border-box; }
@@ -80,37 +96,47 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Offset
 ------------------------------------------------*/
+.what-title-box {
+  margin-left: 17.1875%; }
+
 /* Flex Container
 ------------------------------------------------*/
 /* Flex Itens
 ------------------------------------------------*/
-.wrapper-site-header, .wrapper-footer {
+.wrapper-site-header, .wrapper-what, .wrapper-footer {
   margin: 0 auto; }
 
 @media only screen and (max-width: 1199px) {
-  .wrapper-site-header, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-footer {
     max-width: 950px; } }
 
 @media only screen and (max-width: 991px) {
-  .wrapper-site-header, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-footer {
     max-width: 750px; } }
 
 @media only screen and (max-width: 767px) {
-  .wrapper-site-header, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-footer {
     max-width: 550px; } }
 
 @media only screen and (max-width: 479px) {
-  .wrapper-site-header, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-footer {
     max-width: 400px; } }
 
 @media only screen and (max-width: 319px) {
-  .wrapper-site-header, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-footer {
     max-width: 300px; } }
 
 .site-header {
   align-self: flex-start;
   width: 100%;
   background: #ffd500; }
+
+.what {
+  background: white; }
+
+.wrapper-what {
+  padding-bottom: 5%;
+  text-align: center; }
 
 .site-footer {
   align-self: flex-end;
@@ -258,6 +284,57 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 .header-scroll-mouse {
   height: 150px;
   margin: 0 auto; }
+
+.what-title-box {
+  margin-top: 70px; }
+
+.what-title {
+  font-size: 3em; }
+
+.what-title-icon {
+  height: 50px;
+  margin-top: -20px; }
+
+.what-text {
+  margin-top: 70px;
+  text-align: left; }
+
+.what-scroll {
+  height: 65px;
+  margin-top: -5px; }
+
+@media only screen and (max-width: 991px) {
+  .what-title-box {
+    width: 98.95834%;
+    margin-left: 0.52083%; }
+  .what-scroll {
+    width: 98.95834%; }
+  .what-text {
+    width: 98.95834%;
+    margin-top: 10px;
+    text-align: center; } }
+
+.what-item {
+  margin-top: 100px; }
+
+.what-item-title {
+  margin-bottom: 10px; }
+
+.what-item-text {
+  padding: 0 10%; }
+
+.what-item-scroll {
+  height: 70px; }
+
+@media only screen and (max-width: 991px) {
+  .what-item {
+    width: 98.95834%; }
+  .what-item-icon {
+    width: 98.95834%; } }
+
+@media only screen and (max-width: 479px) {
+  .what-item-text {
+    padding: 0; } }
 
 .visible {
   display: block; }

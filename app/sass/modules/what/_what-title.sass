@@ -1,0 +1,55 @@
+.what-title-box
+    @extend %col-3
+    @extend %offset-2
+    margin-top: 70px
+    
+.what-title
+    font-size: $what-title-sz
+    
+.what-title-icon
+    height: 50px
+    margin-top: -20px
+    
+.what-text
+    @extend %col-5
+    margin-top: 70px
+    text-align: left
+    
+.what-scroll
+    @extend %col-2
+    height: 65px
+    margin-top: -5px
+  
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .what-title-box
+        @include mq-col(12)
+        @include mq-offset(0)
+            
+    .what-scroll
+        @include mq-col(12)
+            
+    .what-text
+        @include mq-col(12)
+        margin-top: 10px
+        text-align: center
+            
+    
+   
+ 
+//small
+@include respond-to($small)
+    
+    
+
+//extra-small
+@include respond-to($extra-small)
+    
+    
+
+//mob
+@include respond-to($mob)

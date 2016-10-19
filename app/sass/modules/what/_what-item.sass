@@ -1,0 +1,41 @@
+.what-item
+    @extend %col-4
+    margin-top: 100px
+    
+.what-item-title
+    margin-bottom: 10px
+    
+.what-item-text
+    padding: 0 10%
+    
+.what-item-scroll
+    height: 70px
+    
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .what-item
+        @include mq-col(12)
+            
+    .what-item-icon
+        @include mq-col(12)
+   
+ 
+//small
+@include respond-to($small)
+    
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .what-item-text
+        padding: 0
+    
+
+//mob
+@include respond-to($mob)
+
+    
