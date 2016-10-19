@@ -1,0 +1,27 @@
+extends ../layouts/_default
+
+block vars
+    -  
+        var lang =     'ru',
+            title =    'Pink Donut',
+            style =    'css/index.css'
+            bodyName = 'index'
+            
+block append link
+    // build:css css/index.css 
+    link(href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet")
+    link(rel="stylesheet" href=style)
+    // endbuild 
+    
+block header
+    include ../partials/_header
+    
+block main
+     
+  
+block footer
+    include ../partials/_footer
+    
+block append script
+    // endbuild
+    

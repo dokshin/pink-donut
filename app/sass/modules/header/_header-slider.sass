@@ -1,0 +1,57 @@
+.header-slider
+    padding: 70px 0 30px 0
+
+.header-slider-item
+    text-align: center
+    
+.header-slider-title
+    width: 55%
+    margin: 0 auto
+    font-size: $header-slider-title-sz
+    
+.header-slider-pagination
+    position: absolute
+    left: 90% !important
+    top: 50%
+    z-index: 100
+    
+.header-slider-pagination .swiper-pagination-bullet
+    display: block
+    width: 10px 
+    height: 10px
+    margin-bottom: 10px !important
+    border: 8px solid $swiper-dots-border-clr
+    background: none
+    
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .header-slider-title
+        width: 100%
+        
+    .header-slider-pagination
+        position: static
+        margin-top: 20px
+        text-align: center
+        
+    .header-slider-pagination .swiper-pagination-bullet
+        display: inline-block
+        margin: 0 15px 0 15px !important
+        
+   
+ 
+//small
+@include respond-to($small)
+     .header-slider-pagination
+        margin: 40px 0
+
+//extra-small
+@include respond-to($extra-small)
+    
+    
+
+//mob
+@include respond-to($mob)

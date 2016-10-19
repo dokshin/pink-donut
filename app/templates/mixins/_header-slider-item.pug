@@ -1,0 +1,5 @@
+mixin header-slider-item(items)
+    each item, i in items
+        .swiper-slide.header-slider-item
+            h2.header-slider-title=item.title
+            +icon(item.sliderImg, 'header-slider-img')
