@@ -138,6 +138,9 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   padding-bottom: 5%;
   text-align: center; }
 
+.works {
+  background: white; }
+
 .site-footer {
   align-self: flex-end;
   width: 100%; }
