@@ -1,0 +1,51 @@
+%button-box
+    position: relative
+    margin: 0 auto
+    text-align: center
+
+%button-box-bg
+    position: absolute
+    top: 0
+    left: 37.5%
+    width: 25%
+    height: 100%
+    z-index: 0
+    
+%button
+    position: relative
+    padding: 10px 20px
+    font-weight: bold
+    border-radius: 20px
+    z-index: 100
+    cursor: pointer
+    
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    %button-box-bg
+        width: 40%
+        left: 30%
+   
+ 
+//small
+@include respond-to($small)
+    %button-box-bg
+        width: 50%
+        left: 25%
+    
+
+//extra-small
+@include respond-to($extra-small)
+    %button-box-bg
+        width: 70%
+        left: 15%
+    
+
+//mob
+@include respond-to($mob)
+    %button-box-bg
+        width: 80%
+        left: 10%

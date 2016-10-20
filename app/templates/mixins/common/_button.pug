@@ -1,0 +1,4 @@
+mixin button(clss, text)
+    div(class=clss + '-button-box')
+        button(class=clss + '-button')=text
+        +icon('underline', clss + '-button-box-bg')

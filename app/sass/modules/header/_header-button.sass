@@ -1,53 +1,11 @@
 .header-button-box
+    @extend %button-box
     @extend %col-12
-    position: relative
-    margin: 0 auto
-    text-align: center
 
 .header-button-box-bg
-    position: absolute
-    top: 0
-    left: 37.5%
-    width: 25%
-    height: 100%
+    @extend %button-box-bg
     
 .header-button
-    position: relative
-    padding: 10px 20px
-    font-weight: bold
+    @extend %button
     background: $header-button-bg
     border: 3px solid $header-button-border
-    border-radius: 20px
-    z-index: 10
-    cursor: pointer
-    
-    
-    
-//RESPOND-TO
-
-//medium
-@include respond-to($medium)
-    .header-button-box-bg
-        width: 40%
-        left: 30%
-   
- 
-//small
-@include respond-to($small)
-    .header-button-box-bg
-        width: 50%
-        left: 25%
-    
-
-//extra-small
-@include respond-to($extra-small)
-    .header-button-box-bg
-        width: 70%
-        left: 15%
-    
-
-//mob
-@include respond-to($mob)
-    .header-button-box-bg
-        width: 80%
-        left: 10%

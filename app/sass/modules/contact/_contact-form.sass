@@ -1,0 +1,47 @@
+.contact-form
+    @extend %col-5
+    
+.contact-form-name,
+.contact-form-email,
+.contact-form-message
+    display: block
+    width: 90%
+    margin: 5px 0 10px 0
+    padding: 1% 5%
+    font-weight: bold
+    background: $contact-form-input-bg
+    border: 3px solid $contact-form-input-border
+    border-radius: 10px
+    
+.contact-form-button-box
+    @extend %button-box
+    margin: 25px auto 0 auto
+    
+.contact-form-button-box-bg
+    @extend %button-box-bg
+    width: 40%
+    left: 30%
+    
+.contact-form-button
+    @extend %button
+    background: $contact-form-button-bg
+    border: 3px solid $contact-form-button-border-clr
+    
+
+
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .contact-form
+        @include mq-col(10)
+        @include mq-offset(1)
+        margin-bottom: 35px
+   
+ 
+//small
+@include respond-to($small)
+    .contact-form
+        @include mq-col(12)
+        @include mq-offset(0)
+        padding: 0 5%

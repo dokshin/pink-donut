@@ -1,0 +1,37 @@
+.about-item
+    @extend %col-4
+    margin-top: 50px
+    text-align: center
+    
+.about-item-percent
+    margin: 10px 0
+    font-size: $about-item-percent
+    
+.about-item-text
+    padding: 0 5%
+    
+    
+
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .about-item
+        @include mq-col(12)
+            
+    .about-item-text
+        margin-top: 10px
+   
+ 
+//small
+@include respond-to($small)
+    
+    
+
+//extra-small
+@include respond-to($extra-small)
+    
+    
+
+//mob
+@include respond-to($mob)

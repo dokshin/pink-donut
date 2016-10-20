@@ -1,0 +1,25 @@
+.works-button
+    @extend %button
+    position: static
+    display: block
+    margin: 2% auto
+    border: 3px solid $works-button-border
+    
+    
+    
+//RESPOND-TO
+
+//small
+@include respond-to($small)
+    .works-button
+        margin: 5% auto
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .works-button
+        margin: 10% auto
+    
+
+//mob
+@include respond-to($mob)

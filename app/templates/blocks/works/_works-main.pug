@@ -1,8 +1,7 @@
 section.works
     header.works-header
         +icon('scroll-mouse', 'works-scroll')
-        .works-title-box
-            h2.works-title='MY WORKS'
-            +icon('underline', 'works-title-icon')
+        +section-title('works', 'WORKS')
         
     include _works-item
+    button.works-button='LOAD MORE'

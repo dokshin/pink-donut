@@ -1,0 +1,28 @@
+.works-item
+    width: 25%
+    margin: 0
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .works-item
+        width: 50%
+        margin-bottom: 1%
+   
+ 
+//small
+@include respond-to($small)
+    .works-item
+        display: block
+        width: 95%
+        margin: 0 auto 1% auto
+    
+
+//extra-small
+@include respond-to($extra-small)
+    
+    
+
+//mob
+@include respond-to($mob)

@@ -45,17 +45,17 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Configs
 ------------------------------------------------*/
-.what-scroll, .what-title-box, .what-item, .what-text, .header-navbar, .header-button-box {
+.what-scroll, .works-scroll, .about-scroll, .what-title-box, .works-title-box, .about-title-box, .what-item, .about-item, .what-text, .about-text, .contact-form, .contact-info, .header-navbar, .header-button-box {
   margin-right: 0.52083%;
   margin-left: 0.52083%; }
 
-.what-scroll, .what-title-box, .what-item, .what-text, .header-navbar, .header-button-box {
+.what-scroll, .works-scroll, .about-scroll, .what-title-box, .works-title-box, .about-title-box, .what-item, .about-item, .what-text, .about-text, .contact-form, .contact-info, .header-navbar, .header-button-box {
   padding-right: 0;
   padding-left: 0; }
 
 /* Row
 ------------------------------------------------*/
-.wrapper-site-header, .wrapper-what, .wrapper-footer, .what-header {
+.wrapper-site-header, .wrapper-what, .wrapper-about, .wrapper-contact, .wrapper-footer, .what-header, .about-header {
   margin-left: 0;
   margin-right: 0;
   max-width: 1200px;
@@ -70,19 +70,19 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Columns
 ------------------------------------------------*/
-.what-scroll {
+.what-scroll, .works-scroll, .about-scroll {
   width: 15.62501%;
   box-sizing: border-box; }
 
-.what-title-box {
+.what-title-box, .works-title-box, .about-title-box {
   width: 23.95834%;
   box-sizing: border-box; }
 
-.what-item {
+.what-item, .about-item {
   width: 32.29167%;
   box-sizing: border-box; }
 
-.what-text {
+.what-text, .about-text, .contact-form, .contact-info {
   width: 40.62501%;
   box-sizing: border-box; }
 
@@ -96,34 +96,43 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Offset
 ------------------------------------------------*/
-.what-title-box {
+.contact-info {
+  margin-left: 8.85416%; }
+
+.what-title-box, .about-title-box {
   margin-left: 17.1875%; }
+
+.contact-title-box {
+  margin-left: 33.85416%; }
+
+.works-scroll {
+  margin-left: 42.1875%; }
 
 /* Flex Container
 ------------------------------------------------*/
 /* Flex Itens
 ------------------------------------------------*/
-.wrapper-site-header, .wrapper-what, .wrapper-footer {
+.wrapper-site-header, .wrapper-what, .wrapper-about, .wrapper-contact, .wrapper-footer {
   margin: 0 auto; }
 
 @media only screen and (max-width: 1199px) {
-  .wrapper-site-header, .wrapper-what, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-about, .wrapper-contact, .wrapper-footer {
     max-width: 950px; } }
 
 @media only screen and (max-width: 991px) {
-  .wrapper-site-header, .wrapper-what, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-about, .wrapper-contact, .wrapper-footer {
     max-width: 750px; } }
 
 @media only screen and (max-width: 767px) {
-  .wrapper-site-header, .wrapper-what, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-about, .wrapper-contact, .wrapper-footer {
     max-width: 550px; } }
 
 @media only screen and (max-width: 479px) {
-  .wrapper-site-header, .wrapper-what, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-about, .wrapper-contact, .wrapper-footer {
     max-width: 400px; } }
 
 @media only screen and (max-width: 319px) {
-  .wrapper-site-header, .wrapper-what, .wrapper-footer {
+  .wrapper-site-header, .wrapper-what, .wrapper-about, .wrapper-contact, .wrapper-footer {
     max-width: 300px; } }
 
 .site-header {
@@ -140,6 +149,18 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 .works {
   background: white; }
+
+.about-main {
+  background: white; }
+
+.wrapper-about {
+  padding-bottom: 5%; }
+
+.contact-main {
+  background: #d2eae3; }
+
+.wrapper-contact {
+  padding: 5% 0; }
 
 .site-footer {
   align-self: flex-end;
@@ -189,6 +210,51 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 .header-navbar-icon {
   width: 30px;
   height: 30px; }
+
+.what-title-icon, .works-title-icon {
+  height: 50px;
+  margin-top: -20px; }
+
+.header-button-box, .contact-form-button-box {
+  position: relative;
+  margin: 0 auto;
+  text-align: center; }
+
+.header-button-box-bg, .contact-form-button-box-bg {
+  position: absolute;
+  top: 0;
+  left: 37.5%;
+  width: 25%;
+  height: 100%;
+  z-index: 0; }
+
+.header-button, .works-button, .contact-form-button {
+  position: relative;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  z-index: 100;
+  cursor: pointer; }
+
+@media only screen and (max-width: 991px) {
+  .header-button-box-bg, .contact-form-button-box-bg {
+    width: 40%;
+    left: 30%; } }
+
+@media only screen and (max-width: 767px) {
+  .header-button-box-bg, .contact-form-button-box-bg {
+    width: 50%;
+    left: 25%; } }
+
+@media only screen and (max-width: 479px) {
+  .header-button-box-bg, .contact-form-button-box-bg {
+    width: 70%;
+    left: 15%; } }
+
+@media only screen and (max-width: 319px) {
+  .header-button-box-bg, .contact-form-button-box-bg {
+    width: 80%;
+    left: 10%; } }
 
 .header-navbar {
   margin-top: 50px; }
@@ -242,47 +308,9 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .header-slider-pagination {
     margin: 40px 0; } }
 
-.header-button-box {
-  position: relative;
-  margin: 0 auto;
-  text-align: center; }
-
-.header-button-box-bg {
-  position: absolute;
-  top: 0;
-  left: 37.5%;
-  width: 25%;
-  height: 100%; }
-
 .header-button {
-  position: relative;
-  padding: 10px 20px;
-  font-weight: bold;
   background: #fad663;
-  border: 3px solid black;
-  border-radius: 20px;
-  z-index: 10;
-  cursor: pointer; }
-
-@media only screen and (max-width: 991px) {
-  .header-button-box-bg {
-    width: 40%;
-    left: 30%; } }
-
-@media only screen and (max-width: 767px) {
-  .header-button-box-bg {
-    width: 50%;
-    left: 25%; } }
-
-@media only screen and (max-width: 479px) {
-  .header-button-box-bg {
-    width: 70%;
-    left: 15%; } }
-
-@media only screen and (max-width: 319px) {
-  .header-button-box-bg {
-    width: 80%;
-    left: 10%; } }
+  border: 3px solid black; }
 
 .header-scroll-mouse {
   height: 150px;
@@ -293,10 +321,6 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 .what-title {
   font-size: 3em; }
-
-.what-title-icon {
-  height: 50px;
-  margin-top: -20px; }
 
 .what-text {
   margin-top: 70px;
@@ -338,6 +362,195 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 @media only screen and (max-width: 479px) {
   .what-item-text {
     padding: 0; } }
+
+.works-header {
+  margin: 5% 0 2% 0; }
+
+.works-title-box {
+  display: inline-block;
+  text-align: center; }
+
+.works-title {
+  font-size: 3em; }
+
+@media only screen and (max-width: 991px) {
+  .works-title-box {
+    width: 98.95834%;
+    margin-top: 5%; } }
+
+.works-item {
+  width: 25%;
+  margin: 0; }
+
+@media only screen and (max-width: 991px) {
+  .works-item {
+    width: 50%;
+    margin-bottom: 1%; } }
+
+@media only screen and (max-width: 767px) {
+  .works-item {
+    display: block;
+    width: 95%;
+    margin: 0 auto 1% auto; } }
+
+.works-button {
+  position: static;
+  display: block;
+  margin: 2% auto;
+  border: 3px solid black; }
+
+@media only screen and (max-width: 767px) {
+  .works-button {
+    margin: 5% auto; } }
+
+@media only screen and (max-width: 479px) {
+  .works-button {
+    margin: 10% auto; } }
+
+.about-title-box {
+  margin-top: 70px;
+  text-align: center; }
+
+.about-title-icon {
+  height: 10%; }
+
+.about-title {
+  font-size: 3em; }
+
+.about-scroll {
+  height: 60%; }
+
+.about-text {
+  margin-top: 70px; }
+
+@media only screen and (max-width: 991px) {
+  .about-title-box {
+    width: 98.95834%;
+    margin-left: 0.52083%;
+    height: 20%; }
+  .about-scroll {
+    width: 98.95834%;
+    height: 30%; }
+  .about-text {
+    width: 98.95834%;
+    margin-top: 30px;
+    padding: 0 5%;
+    text-align: center; } }
+
+.about-item {
+  margin-top: 50px;
+  text-align: center; }
+
+.about-item-percent {
+  margin: 10px 0;
+  font-size: 2em; }
+
+.about-item-text {
+  padding: 0 5%; }
+
+@media only screen and (max-width: 991px) {
+  .about-item {
+    width: 98.95834%; }
+  .about-item-text {
+    margin-top: 10px; } }
+
+.contact-title-box {
+  height: 100px;
+  text-align: center; }
+
+.contact-title {
+  font-size: 3em; }
+
+.contact-title-icon {
+  height: 10%; }
+
+@media only screen and (max-width: 991px) {
+  .contact-title-box {
+    margin-left: 0.52083%;
+    width: 100%;
+    text-align: center; } }
+
+.contact-form-name,
+.contact-form-email,
+.contact-form-message {
+  display: block;
+  width: 90%;
+  margin: 5px 0 10px 0;
+  padding: 1% 5%;
+  font-weight: bold;
+  background: #fad663;
+  border: 3px solid black;
+  border-radius: 10px; }
+
+.contact-form-button-box {
+  margin: 25px auto 0 auto; }
+
+.contact-form-button-box-bg {
+  width: 40%;
+  left: 30%; }
+
+.contact-form-button {
+  background: #fad000;
+  border: 3px solid black; }
+
+@media only screen and (max-width: 991px) {
+  .contact-form {
+    width: 82.29167%;
+    margin-left: 8.85416%;
+    margin-bottom: 35px; } }
+
+@media only screen and (max-width: 767px) {
+  .contact-form {
+    width: 98.95834%;
+    margin-left: 0.52083%;
+    padding: 0 5%; } }
+
+.contact-info {
+  text-align: left; }
+
+.contact-info-item {
+  display: inline-block;
+  width: 30%;
+  margin: 0 15% 5% 0; }
+
+.contact-info-item-address {
+  display: block; }
+
+@media only screen and (max-width: 991px) {
+  .contact-info {
+    width: 82.29167%; }
+  .contact-info-item {
+    display: block;
+    margin: 0 auto 20px auto; } }
+
+@media only screen and (max-width: 479px) {
+  .contact-info {
+    width: 98.95834%;
+    margin-left: 0.52083%; }
+    .contact-info .contact-info-item {
+      width: 100%;
+      text-align: center; } }
+
+.social-contact {
+  margin: 5% 0; }
+
+.social-contact-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px; }
+
+@media only screen and (max-width: 991px) {
+  .social-contact {
+    text-align: center; } }
+
+@media only screen and (max-width: 479px) {
+  .social-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% 0 10% 0; }
+  .social-contact-icon {
+    margin: 5px 10px; } }
 
 .visible {
   display: block; }

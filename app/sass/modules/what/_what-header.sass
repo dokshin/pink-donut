@@ -7,11 +7,10 @@
     margin-top: 70px
     
 .what-title
-    font-size: $what-title-sz
+    font-size: $section-title-sz
     
 .what-title-icon
-    height: 50px
-    margin-top: -20px
+    @extend %section-title-icon
     
 .what-text
     @extend %col-5
@@ -41,18 +40,3 @@
         margin-top: 10px
         text-align: center
             
-    
-   
- 
-//small
-@include respond-to($small)
-    
-    
-
-//extra-small
-@include respond-to($extra-small)
-    
-    
-
-//mob
-@include respond-to($mob)

@@ -1,0 +1,39 @@
+.works-header
+    margin: 5% 0 2% 0
+
+.works-scroll
+    @extend %col-2
+    @extend %offset-5
+
+.works-title-box
+    @extend %col-3
+    display: inline-block
+    text-align: center
+    
+.works-title
+    font-size: $section-title-sz
+    
+.works-title-icon
+    @extend %section-title-icon
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .works-title-box
+        @include mq-col(12)
+        margin-top: 5%
+   
+ 
+//small
+@include respond-to($small)
+    
+    
+
+//extra-small
+@include respond-to($extra-small)
+    
+    
+
+//mob
+@include respond-to($mob)

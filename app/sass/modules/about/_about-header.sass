@@ -1,44 +1,45 @@
-.what-title-box
+.about-header
+    @extend %row
+    
+.about-title-box
     @extend %col-3
     @extend %offset-2
     margin-top: 70px
+    text-align: center
     
-.what-title
-    font-size: $what-title-sz
+.about-title-icon
+    height: 10%
     
-.what-title-icon
-    height: 50px
-    margin-top: -20px
+.about-title
+    font-size: $section-title-sz
     
-.what-text
+.about-scroll
+    @extend %col-2
+    height: 60%
+    
+.about-text
     @extend %col-5
     margin-top: 70px
-    text-align: left
-    
-.what-scroll
-    @extend %col-2
-    height: 65px
-    margin-top: -5px
-  
     
     
 //RESPOND-TO
 
 //medium
 @include respond-to($medium)
-    .what-title-box
+    .about-title-box
         @include mq-col(12)
         @include mq-offset(0)
+        height: 20%
             
-    .what-scroll
+    .about-scroll
         @include mq-col(12)
+        height: 30%
             
-    .what-text
+    .about-text
         @include mq-col(12)
-        margin-top: 10px
+        margin-top: 30px
+        padding: 0 5%
         text-align: center
-            
-    
    
  
 //small

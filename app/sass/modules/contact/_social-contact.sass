@@ -1,0 +1,27 @@
+.social-contact
+    margin: 5% 0
+
+.social-contact-icon
+    width: 50px
+    height: 50px
+    margin: 0 10px
+    
+
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .social-contact
+        text-align: center
+   
+
+//extra-small
+@include respond-to($extra-small)
+    .social-contact
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        margin: 5% 0 10% 0
+
+    .social-contact-icon
+        margin: 5px 10px

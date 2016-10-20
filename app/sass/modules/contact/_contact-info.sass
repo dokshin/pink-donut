@@ -1,0 +1,42 @@
+.contact-info
+    @extend %col-5
+    @extend %offset-1
+    text-align: left
+    
+.contact-info-item
+    display: inline-block
+    width: 30%
+    margin: 0 15% 5% 0
+    
+    
+.contact-info-item-address
+    display: block
+    
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .contact-info
+        @include mq-col(10)
+            
+    .contact-info-item
+        display: block
+        margin: 0 auto 20px auto
+   
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .contact-info
+        @include mq-col(12)
+        @include mq-offset(0)
+            
+        .contact-info-item
+            width: 100%
+            text-align: center
+    
+
+//mob
+@include respond-to($mob)
