@@ -1,31 +1,37 @@
 .contact-form
     @extend %col-5
     
-.contact-form-name,
-.contact-form-email,
-.contact-form-message
-    display: block
-    width: 90%
-    margin: 5px 0 10px 0
-    padding: 1% 5%
-    font-weight: bold
-    background: $contact-form-input-bg
-    border: 3px solid $contact-form-input-border
-    border-radius: 10px
+    &-name,
+    &-email,
+    &-message
+        display: block
+        width: 90%
+        margin: 5px 0 10px 0
+        padding: 1% 5%
+        font-weight: bold
+        background: $contact-form-input-bg
+        border: 3px solid $contact-form-input-border
+        border-radius: 10px
+
+        &:focus
+            background: $contact-form-focus-bg
     
-.contact-form-button-box
-    @extend %button-box
-    margin: 25px auto 0 auto
+    &button-box
+        @extend %button-box
+        margin: 25px auto 0 auto
     
-.contact-form-button-box-bg
-    @extend %button-box-bg
-    width: 40%
-    left: 30%
+    &button-box-bg
+        @extend %button-box-bg
+        width: 40%
+        left: 30%
     
-.contact-form-button
-    @extend %button
-    background: $contact-form-button-bg
-    border: 3px solid $contact-form-button-border-clr
+    &-button
+        @extend %button
+        background: $contact-form-button-bg
+        border: 3px solid $contact-form-button-border-clr
+
+        &:hover
+            background: $contact-form-button-hv-bg
     
 
 
@@ -45,3 +51,17 @@
         @include mq-col(12)
         @include mq-offset(0)
         padding: 0 5%
+        
+        
+//extra-small
+@include respond-to($extra-small)
+    .contact-form-button-box-bg
+        width: 50%
+        left: 25%
+        
+        
+//mob
+@include respond-to($mob)
+    .contact-form-button-box-bg
+        width: 60%
+        left: 20%

@@ -1,7 +1,4 @@
-section.contact-main
-    .wrapper-contact
-        +section-title('contact', 'CONTACT')
-        form.contact-form
+form.contact-form
             label(for="contact-name")="NAME"
             input.contact-form-name(type="text" id="contact-name")
             label(for="contact-email")="EMAIL"
@@ -11,6 +8,3 @@ section.contact-main
             .contact-form-button-box    
                 input.contact-form-button(type="submit" value="SEND")
                 +icon('underline', 'contact-form-button-box-bg')
-                
-        include _contact-info
-            

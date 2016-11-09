@@ -17,20 +17,19 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css css/index.css -->
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <!-- endbuild -->
   </head>
   <body class="index">
-    <header class="site-header">
+    <header class="site-header" id="site-header-scroll">
       <div class="wrapper-site-header">
-        <nav class="header-navbar">
-          <div class="header-navbar-mob">
-            <svg class="header-navbar-icon">
+        <nav class="site-header-navbar">
+          <div class="site-header-navbar-mob">
+            <svg class="site-header-navbar-icon">
               <use xlink:href="#burger"></use>
             </svg>
-            <p class="header-navbar-icon-text">MENU</p>
-          </div><a class="header-navbar-item" href="/">HOME</a><a class="header-navbar-item" href="/">WHAT I DO</a><a class="header-navbar-item" href="/">MY WORKS</a><a class="header-navbar-item" href="/">ABOUT</a><a class="header-navbar-item" href="/">CONTACT</a>
+            <p class="site-header-navbar-icon-text">MENU</p>
+          </div><a class="site-header-navbar-item" href="#what-scroll">WHAT I DO</a><a class="site-header-navbar-item" href="#works-scroll">MY WORKS</a><a class="site-header-navbar-item" href="#about-scroll">ABOUT</a><a class="site-header-navbar-item" href="#contact-scroll">CONTACT</a>
         </nav>
         <div class="swiper-container header-slider">
           <div class="swiper-wrapper">
@@ -55,18 +54,17 @@
           </div>
           <div class="header-slider-pagination"></div>
         </div>
-        <div class="header-button-box">
-          <button class="header-button">SEE MORE</button>
-          <svg class="header-button-box-bg">
-            <use xlink:href="#underline"></use>
-          </svg>
-        </div>
+        <div class="site-header-button-box"><a class="site-header-button-link" href="#works-scroll">
+            <button class="site-header-button">SEE MORE</button>
+            <svg class="site-header-button-box-bg">
+              <use xlink:href="#underline"></use>
+            </svg></a></div>
         <svg class="header-scroll-mouse">
           <use xlink:href="#scroll-mouse"></use>
         </svg>
       </div>
     </header>
-    <section class="what">
+    <section class="what-main" id="what-scroll">
       <div class="wrapper-what">
         <header class="what-header">
           <div class="what-title-box">
@@ -115,7 +113,7 @@
         </div>
       </div>
     </section>
-    <section class="works">
+    <section class="works-main" id="works-scroll">
       <header class="works-header">
         <svg class="works-scroll">
           <use xlink:href="#scroll-mouse"></use>
@@ -126,10 +124,10 @@
             <use xlink:href="#underline"></use>
           </svg>
         </div>
-      </header><img class="works-item" alt="works item" src="img/works/work-book.png"><img class="works-item" alt="works item" src="img/works/work-alco.png"><img class="works-item" alt="works item" src="img/works/work-visit.png"><img class="works-item" alt="works item" src="img/works/work-mock-up.png">
+      </header><img class="works-item  " alt="works item" src="i/images/work/work-book.png"><img class="works-item  " alt="works item" src="i/images/work/work-alco.png"><img class="works-item  " alt="works item" src="i/images/work/work-visit.png"><img class="works-item  " alt="works item" src="i/images/work/work-mock-up.png"><img class="works-item works-item-hidden" alt="works item" src="i/images/work/work-book.png"><img class="works-item works-item-hidden" alt="works item" src="i/images/work/work-alco.png"><img class="works-item works-item-hidden" alt="works item" src="i/images/work/work-visit.png"><img class="works-item works-item-hidden" alt="works item" src="i/images/work/work-mock-up.png">
       <button class="works-button">LOAD MORE</button>
     </section>
-    <section class="about-main">
+    <section class="about-main" id="about-scroll">
       <div class="wrapper-about">
         <header class="about-header">
           <div class="about-title-box">
@@ -172,7 +170,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-main">
+    <section class="contact-main" id="contact-scroll">
       <div class="wrapper-contact">
         <div class="contact-title-box">
           <h2 class="contact-title">CONTACT</h2>
@@ -195,20 +193,20 @@
           </div>
         </form>
         <div class="contact-info">
-          <div class="social-contact"><a class="social-contact-link" href="#">
-              <svg class="social-contact-icon">
+          <div class="contact-social"><a class="contact-social-link" href="#">
+              <svg class="contact-social-icon">
                 <use xlink:href="#fb"></use>
-              </svg></a><a class="social-contact-link" href="#">
-              <svg class="social-contact-icon">
+              </svg></a><a class="contact-social-link" href="#">
+              <svg class="contact-social-icon">
                 <use xlink:href="#twitter"></use>
-              </svg></a><a class="social-contact-link" href="#">
-              <svg class="social-contact-icon">
+              </svg></a><a class="contact-social-link" href="#">
+              <svg class="contact-social-icon">
                 <use xlink:href="#google"></use>
-              </svg></a><a class="social-contact-link" href="#">
-              <svg class="social-contact-icon">
+              </svg></a><a class="contact-social-link" href="#">
+              <svg class="contact-social-icon">
                 <use xlink:href="#social-p"></use>
-              </svg></a><a class="social-contact-link" href="#">
-              <svg class="social-contact-icon">
+              </svg></a><a class="contact-social-link" href="#">
+              <svg class="contact-social-icon">
                 <use xlink:href="#instagramm"></use>
               </svg></a>
           </div>
@@ -232,9 +230,21 @@
         </div>
       </div>
     </section>
+    <div id="player"></div>
     <footer class="site-footer">
-      <div class="wrapper-footer">
-        <p class="copyright"></p>
+      <div class="wrapper-site-footer">
+        <p class="copyright">
+          Copyright 2015 by Anna Dabbej
+          
+        </p>
+        <nav class="site-footer-navbar">
+          <div class="site-footer-navbar-mob">
+            <svg class="site-footer-navbar-icon">
+              <use xlink:href="#burger"></use>
+            </svg>
+            <p class="site-footer-navbar-icon-text">MENU</p>
+          </div><a class="site-footer-navbar-item" href="#what-scroll">WHAT I DO</a><a class="site-footer-navbar-item" href="#works-scroll">MY WORKS</a><a class="site-footer-navbar-item" href="#about-scroll">ABOUT</a><a class="site-footer-navbar-item" href="#contact-scroll">CONTACT</a>
+        </nav>
       </div>
     </footer>
     <!-- build:js js/vendor.js -->
@@ -242,10 +252,14 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/swiper/dist/js/swiper.js"></script>
     <!-- endbower -->
-    <!-- build:js js/main.js -->
-    <script src="js/sprite.js" async></script>
-    <script src="js/common.js" async></script>
-    <script src="js/slider.js" async></script>
+    <!-- build:js js/index.js -->
+    <script src="js/game/game.js"></script>
+    <script src="js/game/move.js"></script>
+    <script src="js/common/navbar.js"></script>
+    <script src="js/common/scrollTo.js"></script>
+    <script src="js/common/slider.js" async></script>
+    <script src="js/common/sprite.js" async></script>
+    <script src="js/works/works-item-visible.js"></script>
     <!-- endbuild-->
   </body>
 </html>

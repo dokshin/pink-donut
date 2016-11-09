@@ -1,11 +1,15 @@
-.header-button-box
-    @extend %button-box
-    @extend %col-12
-
-.header-button-box-bg
-    @extend %button-box-bg
-    
-.header-button
+.site-header-button
     @extend %button
     background: $header-button-bg
     border: 3px solid $header-button-border
+    
+    &:hover
+        background: $header-button-hv-bg
+
+    &-box
+        @extend %button-box
+        @extend %col-12
+
+        &-bg
+            @extend %button-box-bg
+    

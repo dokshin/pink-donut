@@ -1,4 +1,5 @@
 mixin button(clss, text)
     div(class=clss + '-button-box')
-        button(class=clss + '-button')=text
-        +icon('underline', clss + '-button-box-bg')
+        a(class=clss + '-button-link' href="#works-scroll")
+            button(class=clss + '-button')=text
+            +icon('underline', clss + '-button-box-bg')

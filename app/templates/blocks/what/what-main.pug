@@ -1,9 +1,10 @@
-section.about-main
-    .wrapper-about
-        header.about-header
-            +section-title('about', 'ABOUT ME')
-            +icon('scroll-mouse', 'about-scroll')
-            p.about-text.
+section.what-main(id="what-scroll")
+    .wrapper-what
+        header.what-header
+            +section-title('what', 'WHAT I DO')
+
+            +icon('what-scroll','what-scroll')
+            p.what-text.
                 Fingerstache green juice semiotics quinoa, truffaut letterpress wolf photo booth ugh biodiesel mumblecore brunch. Meh austin vinyl banh mi, gluten-free chillwave scenester kombucha street art. Before they sold out lumbersexual chillwave, cold-pressed mumblecore beard pickled letterpress normcore crucifix.
-        
-        include _about-item
+
+        include _what-item

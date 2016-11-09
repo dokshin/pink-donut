@@ -9,7 +9,6 @@ block vars
             
 block append link
     // build:css css/index.css 
-    link(href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet")
     link(rel="stylesheet" href=style)
     // endbuild 
     
@@ -17,10 +16,11 @@ block header
     include ../partials/_header
     
 block main
-     include ../blocks/what/_what-main
-     include ../blocks/works/_works-main
-     include ../blocks/about/_about-main
-     include ../blocks/contact/_contact-main
+     include ../blocks/what/what-main
+     include ../blocks/works/works-main
+     include ../blocks/about/about-main
+     include ../blocks/contact/contact-main
+     
   
 block footer
     include ../partials/_footer

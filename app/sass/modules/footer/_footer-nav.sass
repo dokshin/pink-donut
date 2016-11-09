@@ -1,0 +1,45 @@
+.site-footer-navbar
+    @extend %navbar
+    @extend %offset-2
+    text-align: right
+
+    &-item
+        @extend %navbar-item
+    
+        &:hover
+            background: $footer-navbar-item-hv-bg
+            color: $footer-navbar-text-hv-clr
+    
+    &-mob
+        @extend %navbar-mob
+        
+    &-icon
+        @extend %navbar-icon
+    
+
+    
+//RESPOND-TO
+
+//large
+@include respond-to($large)
+    .site-footer-navbar
+        @include mq-offset(1)
+            
+            
+            
+//medium
+@include respond-to($medium)
+    .site-footer-navbar
+        @include mq-offset(0)
+        @include mq-col(12)
+        margin-bottom: 30px
+        text-align: center
+    
+
+//small
+@include respond-to($small)
+    .site-footer-navbar-item
+        background: $footer-navbar-item-smll-bg
+        color: $footer-navbar-text-smll-clr
+    
+    

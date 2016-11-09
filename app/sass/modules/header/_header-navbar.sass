@@ -1,19 +1,19 @@
-.header-navbar
+.site-header-navbar
     @extend %navbar
     margin-top: 50px
 
-.header-navbar-item
-    @extend %navbar-item
+    &-item
+        @extend %navbar-item
+
+        &:hover
+            background: $header-navbar-item-hv-bg
+            color: $header-navbar-text-hv-clr
     
-    &:hover
-        background: $header-navbar-item-hv-bg
-        color: $header-navbar-text-hv-clr
-    
-.header-navbar-mob
-    @extend %navbar-mob
+    &-mob
+        @extend %navbar-mob
         
-.header-navbar-icon
-    @extend %navbar-icon
+    &-icon
+        @extend %navbar-icon
     
 
     
@@ -21,16 +21,7 @@
 
 //small
 @include respond-to($small)
-    .header-navbar-item
+    .site-header-navbar-item
         background: $header-navbar-item-smll-bg
         color: $header-navbar-text-smll-clr
     
-    
-
-//extra-small
-@include respond-to($extra-small)
-
-    
-
-//mob
-@include respond-to($mob)

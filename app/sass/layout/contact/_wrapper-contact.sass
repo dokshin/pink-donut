@@ -1,3 +1,16 @@
 .wrapper-contact
     @extend %wrapper
     padding: 5% 0
+    
+    
+
+//RESPOND-TO
+
+//extra-small
+@include respond-to($extra-small)
+    .wrapper-contact
+        padding: 10% 0
+    
+
+//mob
+@include respond-to($mob)
